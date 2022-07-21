@@ -9,3 +9,21 @@ datasource db {
   provider = "sqlite"
   url      = "file:./database.sqlite"
 }
+
+// CRUD - Create, Read, Update and Delete
+
+model User {
+  id String @id @default(uuid()) //universal unique identifier
+
+  name     String
+  email    String @unique
+  password String
+
+  birthDate  DateTime?
+  cellNumber Int?      @unique
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@map("user")
+}
