@@ -13,3 +13,12 @@ class UserEntity implements User {
 }
 
 export {UserEntity}
+
+
+/*
+    * Servidor  --Repositorios também conectam com ele
+    * Controladores
+    * Serviços
+    * Prisma
+    * Banco de dados
+*/
